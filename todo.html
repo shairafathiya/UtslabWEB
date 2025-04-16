@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Todo-list</title>
+  </head>
+  <body class="min-h-screen flex items-center justify-center bg-white">
+    <div class="w-full max-w-md p-6 bg-gray-200 rounded-lg shadow-lg">
+      <!-- Header -->
+      <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold flex items-center gap-2">📝 Todo List</h1>
+        <button id="btnAdd" class="p-2 rounded-lg font-bold text-white bg-blue-400">
+          Logout
+        </button>
+      </div>
+
+      <!-- Form -->
+      <div class="flex items-center gap-2 mb-4">
+        <input
+          id="inputTodo"
+          type="text"
+          placeholder="✏️ Masukkan list"
+          class="flex-1 p-2 rounded-lg bg-white"
+        />
+        <button
+          id="submitTodo"
+          class="px-4 py-2 rounded-lg font-bold text-white bg-blue-400"
+        >
+          Submit
+        </button>
+      </div>
+
+      <!-- Hasil Todo -->
+      <div id="containerTodos" class="space-y-3">
+        <!-- Todo items muncul di sini -->
+      </div>
+    </div>
+
+    <script src="./src/todo.js"></script>
+  </body>
+</html>
