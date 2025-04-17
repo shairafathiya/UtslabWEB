@@ -13,13 +13,13 @@
     
     <!-- Register Form -->
     <div class="form-container register-container">
-      <form action="#">
+      <form id="registerForm">
         <h1>Register here.</h1>
-        <input type="text" placeholder="Name" />
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button>Register</button>
-        <span>or use your account</span>
+        <input type="text" id="regFullname" name="regFullname" placeholder="Full Name" required />
+        <input type="email" id="regEmail" name="regEmail" placeholder="Email" required />
+        <input type="password" id="regPassword" name="regPassword" placeholder="Password" required />
+        <button type="submit" id="btn-regis">Register</button>
+        <span class="message"></span>
         <div class="social-container">
           <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
           <a href="#" class="social"><i class="lni lni-google"></i></a>
@@ -30,10 +30,10 @@
 
     <!-- Login Form -->
     <div class="form-container login-container">
-      <form action="#">
+      <form id="loginForm">
         <h1>Login here.</h1>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
+        <input type="email" id="email" name="email" placeholder="Email" required />
+        <input type="password" id="password" name="password" placeholder="Password" required />
         <div class="content">
           <div class="checkbox">
             <input type="checkbox" name="checkbox" id="checkbox" />
@@ -43,8 +43,8 @@
             <a href="#">Forgot password?</a>
           </div>
         </div>
-        <button>Login</button>
-        <span>or use your account</span>
+        <button type="submit" id="button-login">Login</button>
+        <span class="message"></span>
         <div class="social-container">
           <a href="#" class="social"><i class="lni lni-facebook-fill"></i></a>
           <a href="#" class="social"><i class="lni lni-google"></i></a>
@@ -74,6 +74,7 @@
     </div>
 
   </div>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="src/scripts.js"></script>
 </body>
-<script src="/src/scripts.js"></script>
 </html>
